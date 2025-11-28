@@ -1,5 +1,6 @@
 body {
     background-color: #E8C3D3;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body h1 {
@@ -11,7 +12,7 @@ body h4 {
     margin: 0px;
 }
 
-#container {
+#containerFirstPage {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,12 +23,6 @@ body h4 {
 .firstPageImage {
     object-fit: contain;
     height: 400px;
-}
-
-@media (min-width: 480px) {
-    body {
-        background-color: green;
-    }
 }
 
 .nextButton {
@@ -44,4 +39,61 @@ body h4 {
 
 .textNextButton {
     font-size: 20px;
+}
+
+
+/* HOMPAGE */
+#containerHomePage {
+    display: none;
+    flex-direction: column;
+
+}
+
+#logo {
+    font-size: 30px;
+    margin: 0px;
+}
+
+#homePageText {
+    font-size: 20px;
+    text-align: center;
+}
+
+#chooseCardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+
+}
+
+.cardsBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: white;
+    width: 40%;
+    height: 120px;
+    padding: 10px;
+    box-shadow: 3px 6px #C56991;
+}
+
+.cardsText {
+    font-size: 23px;
+    margin: 0px;
+    text-align: center;
+}
+
+.cardImg {
+    height: 80px;
+}
+
+
+@media (min-width: 480px) {
+    body {
+        background-color: green;
+    }
 }
