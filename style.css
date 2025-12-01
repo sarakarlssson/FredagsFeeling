@@ -10,6 +10,9 @@ body h1 {
 
 body h4 {
     margin: 0px;
+    font-size: 25px;
+    color: black;
+    text-align: center;
 }
 
 #containerFirstPage {
@@ -91,6 +94,47 @@ body h4 {
     height: 80px;
 }
 
+
+
+/* NEVER HAVE I EVER */
+#containerNeverHaveIEver {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    display: none;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.goBackButton {
+    height: 50px;
+}
+
+#helpImg {
+    height: 20px;
+    display: flex;
+    align-self: end;
+}
+
+#statementBox {
+    border-radius: 10px;
+    background-color: white;
+    height: 400px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
+}
+
+.statementText {
+    font-size: 30px;
+}
 
 @media (min-width: 480px) {
     body {
